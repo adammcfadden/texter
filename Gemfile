@@ -13,6 +13,7 @@ gem 'sass-rails', '>= 3.2'
 gem 'bootstrap_form'
 gem 'devise'
 gem 'paperclip'
+gem 'rest-client'
 
 group :production do
   gem 'rails_12factor'

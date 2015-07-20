@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :message do
-    to "MyString"
-    from "MyString"
-    body "MyString"
+    to "5035129206"
+    from "6149168051"
+    body "Factory Girl Tes(x)t Message"
   end
 end
