@@ -35,8 +35,8 @@ class MessagesController < ApplicationController
 
     if sent
       new_message_params = message_params.merge({to: params[:message][:to]})
-      @message = Message.create(new_message_params)
       binding.pry
+      @message = Message.create(new_message_params)
       if new_messages.length == 1
         flash[:notice] = 'Message Sent!'
       else

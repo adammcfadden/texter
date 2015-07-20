@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Message, vcr: true do
-  it { should validate_presence_of :to }
+  it { should have_many :to_numbers }
   it { should validate_presence_of :from }
   it { should validate_presence_of :body }
 
@@ -12,9 +12,10 @@ describe Message, vcr: true do
     end
 
     it "will fail to send a message if information is incorrect" do
-      message = build(:message, to: '123467890')
+      message = build(:message)
+      message.update(to_numbers: [create(:to_number, number: "1234567890")])
       message.save
-      expect(message.errors.messages[:base]).to eq ["The 'To' number 123467890 is not a valid phone number."]
+      expect(message.errors.messages[:base]).to eq ["The 'To' number 1234567890 is not a valid phone number."]
     end
   end
 end
