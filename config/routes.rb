@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  root to: "messages#index"
+  root to: 'messages#index'
 
   resources :messages
+  post '/inbound_messages', to: 'messages#inbound_messages'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

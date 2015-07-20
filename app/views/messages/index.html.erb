@@ -5,7 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>To</th>
       <th>From</th>
       <th>Body</th>
       <th>Status</th>
@@ -16,7 +15,6 @@
   <tbody>
     <% @messages.each do |message| %>
       <tr>
-        <td><%= message.to %></td>
         <td><%= message.from %></td>
         <td><%= message.body %></td>
         <td><%= message.status %></td>

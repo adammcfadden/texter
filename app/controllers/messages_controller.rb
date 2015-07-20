@@ -1,5 +1,6 @@
 class MessagesController < ApplicationController
   before_action :set_message, only: [:show, :edit, :update, :destroy]
+  skip_before_filter :verify_authenticity_token, only: [:inbound_messages]
 
   # GET /messages
   def index
@@ -47,6 +48,11 @@ class MessagesController < ApplicationController
   def destroy
     @message.destroy
     redirect_to messages_url, notice: 'Message was successfully destroyed.'
+  end
+
+  def inbound_messages
+    Message.send_reply(params[:From])
+    render plain: "This is an automated reply endpoint"
   end
 
   private
