@@ -27,9 +27,11 @@ group :development do
 end
 
 group :test, :development do
+  gem 'dotenv-rails'
   gem 'rspec-rails'
   gem 'launchy'
   gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 group :test do
