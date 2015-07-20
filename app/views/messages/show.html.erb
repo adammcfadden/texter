@@ -2,7 +2,9 @@
 
 <p>
   <strong>To:</strong>
-  <%= @message.to %>
+  <% @message.to.each do |message_to|%>
+  <li><%= message_to %></li>
+  <% end %>
 </p>
 
 <p>

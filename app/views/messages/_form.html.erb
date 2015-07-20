@@ -2,7 +2,7 @@
   <%= render "layouts/errors", object: @message %>
 
   <div id="to-fields">
-    <%= f.number_field :to, id: 'to-recipient-1'%>
+    <%= f.number_field :to, id: 'to-recipient-1', multiple: true%>
   </div>
   <%= f.text_field :from %>
   <%= f.text_field :body %>

@@ -4,8 +4,7 @@ class Message < ActiveRecord::Base
   validates :from, presence: true
   validates :body, presence: true
 
-  before_create :send_sms
-private
+  # before_create :send_sms
   def send_sms
     response = RestClient::Request.new(
       method: :post,

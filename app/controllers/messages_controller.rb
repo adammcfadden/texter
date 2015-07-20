@@ -21,13 +21,32 @@ class MessagesController < ApplicationController
 
   # POST /messages
   def create
-    @message = Message.new(message_params)
+    sent = true
+    new_messages = []
 
-    if @message.save
-      redirect_to @message, notice: 'Message Sent!'
+    params[:message][:to].each do |message_to|
+      new_messages << Message.new(message_params.merge({to: message_to}))
+    end
+
+    new_messages.each do |message|
+      unless message.send_sms
+      end
+    end
+
+    if sent
+      new_message_params = message_params.merge({to: params[:message][:to]})
+      @message = Message.create(new_message_params)
+      binding.pry
+      if new_messages.length == 1
+        flash[:notice] = 'Message Sent!'
+      else
+        flash[:notice] = 'Messages Sent!'
+      end
+      redirect_to root_path
     else
       render :new
     end
+
   end
 
   # PATCH/PUT /messages/1
@@ -53,6 +72,6 @@ class MessagesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def message_params
-      params.require(:message).permit(:to, :from, :body, :status)
+      params.require(:message).permit(:from, :body, :status)
     end
 end
