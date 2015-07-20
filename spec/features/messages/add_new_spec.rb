@@ -10,7 +10,11 @@ describe "The message path", vcr: true do
     expect(page).to have_content("Message Sent!")
   end
 
-  pending "will fail, and give an error if the user does not fill out all fields" do
-
+  it "will fail, and give an error if the user does not fill out all fields" do
+    visit new_message_path
+    fill_in "message_to", with: attributes_for(:message)[:to]
+    fill_in "message_body", with: attributes_for(:message)[:body]
+    click_on "Send Message"
+    expect(page).to have_content("can't be blank")
   end
 end

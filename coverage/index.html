@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-20T10:20:09-07:00">2015-07-20T10:20:09-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-20T10:42:47-07:00">2015-07-20T10:42:47-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">94.62%</span></span>
+    (<span class="covered_percent"><span class="green">95.8%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.08
+         1.15
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>21</b> files in total.
-    <b>130</b> relevant lines. 
-    <span class="green"><b>123</b> lines covered</span> and
-    <span class="red"><b>7</b> lines missed </span>
+    <b>143</b> relevant lines. 
+    <span class="green"><b>137</b> lines covered</span> and
+    <span class="red"><b>6</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#aae1188fdc940da1df298d66d8038d218bb59849" class="src_link" title="app/controllers/messages_controller.rb">app/controllers/messages_controller.rb</a></td>
-        <td class="red strong">72.0 %</td>
+        <td class="red strong">76.0 %</td>
         <td>58</td>
         <td>25</td>
-        <td>18</td>
-        <td>7</td>
-        <td>0.7</td>
+        <td>19</td>
+        <td>6</td>
+        <td>0.9</td>
       </tr>
       
       <tr>
@@ -83,11 +83,11 @@
       <tr>
         <td class="strong"><a href="#4a5c7feb2b064105eb1f6398d4b6a5616ccab81d" class="src_link" title="app/models/message.rb">app/models/message.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>20</td>
-        <td>8</td>
-        <td>8</td>
+        <td>24</td>
+        <td>11</td>
+        <td>11</td>
         <td>0</td>
-        <td>1.1</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -233,9 +233,9 @@
       <tr>
         <td class="strong"><a href="#9e572e3c0aff865a691f7f1d9331fa6b31efe7cb" class="src_link" title="spec/features/messages/add_new_spec.rb">spec/features/messages/add_new_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>16</td>
-        <td>10</td>
-        <td>10</td>
+        <td>20</td>
+        <td>15</td>
+        <td>15</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -243,11 +243,11 @@
       <tr>
         <td class="strong"><a href="#969c665c5ae89607e2bc36e0d8b5597bb3b69ed1" class="src_link" title="spec/models/message_spec.rb">spec/models/message_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>12</td>
-        <td>8</td>
-        <td>8</td>
+        <td>20</td>
+        <td>13</td>
+        <td>13</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -257,7 +257,7 @@
         <td>24</td>
         <td>24</td>
         <td>0</td>
-        <td>1.6</td>
+        <td>1.8</td>
       </tr>
       
     </tbody>
@@ -327,11 +327,11 @@
         <div class="source_table" id="aae1188fdc940da1df298d66d8038d218bb59849">
   <div class="header">
     <h3>app/controllers/messages_controller.rb</h3>
-    <h4><span class="red">72.0 %</span> covered</h4>
+    <h4><span class="red">76.0 %</span> covered</h4>
     <div>
       <b>25</b> relevant lines. 
-      <span class="green"><b>18</b> lines covered</span> and
-      <span class="red"><b>7</b> lines missed.</span>
+      <span class="green"><b>19</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
   </div>
   
@@ -422,8 +422,8 @@
           <code class="ruby">  def new</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="15">
+          <span class="hits">2</span>
           
           <code class="ruby">    @message = Message.new</code>
         </li>
@@ -476,8 +476,8 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="24">
+          <span class="hits">2</span>
           
           <code class="ruby">    @message = Message.new(message_params)</code>
         </li>
@@ -488,8 +488,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="26">
+          <span class="hits">2</span>
           
           <code class="ruby">    if @message.save</code>
         </li>
@@ -506,8 +506,8 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="29">
-          
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
           
           <code class="ruby">      render :new</code>
         </li>
@@ -668,8 +668,8 @@
           <code class="ruby">    def message_params</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="56">
+          <span class="hits">2</span>
           
           <code class="ruby">      params.require(:message).permit(:to, :from, :body, :status)</code>
         </li>
@@ -725,8 +725,8 @@
     <h3>app/models/message.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -788,8 +788,8 @@
           <code class="ruby">  def send_sms</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="10">
+          <span class="hits">3</span>
           
           <code class="ruby">    response = RestClient::Request.new(</code>
         </li>
@@ -845,10 +845,34 @@
         <li class="never" data-hits="" data-linenumber="19">
           
           
+          <code class="ruby">  rescue RestClient::BadRequest =&gt; error</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    message = JSON.parse(error.response)[&#39;message&#39;]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    errors.add(:base, message)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">end</code>
@@ -2507,8 +2531,8 @@
     <h3>spec/features/messages/add_new_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>15</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2591,22 +2615,46 @@
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">  pending &quot;will fail, and give an error if the user does not fill out all fields&quot; do</code>
+          <code class="ruby">  it &quot;will fail, and give an error if the user does not fill out all fields&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    visit new_message_path</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &quot;message_to&quot;, with: attributes_for(:message)[:to]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &quot;message_body&quot;, with: attributes_for(:message)[:body]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &quot;Send Message&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&quot;can&#39;t be blank&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">end</code>
@@ -2621,8 +2669,8 @@
     <h3>spec/models/message_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>13</b> relevant lines. 
+      <span class="green"><b>13</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2675,28 +2723,76 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &quot;will send a message before creating a message in active record&quot; do</code>
+          <code class="ruby">  describe &quot;send_sms&quot;, vcr: true do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">    message = create(:message)</code>
+          <code class="ruby">    it &quot;will send a message before creating a message in active record&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(Message.all.first).to eql message</code>
+          <code class="ruby">      message = create(:message)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(Message.all.first).to eql message</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;will fail to send a message if information is incorrect&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      message = build(:message, to: &#39;123467890&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      message.save</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(message.errors.messages[:base]).to eq [&quot;The &#39;To&#39; number 123467890 is not a valid phone number.&quot;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">end</code>
@@ -3002,14 +3098,14 @@
           <code class="ruby">  config.around(:each) do |example|</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="48">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="48">
+          <span class="hits">7</span>
           
           <code class="ruby">    DatabaseCleaner.cleaning do</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="49">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="49">
+          <span class="hits">7</span>
           
           <code class="ruby">      example.run</code>
         </li>
@@ -3164,14 +3260,14 @@
           <code class="ruby">  c.configure_rspec_metadata!</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="75">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="75">
+          <span class="hits">4</span>
           
           <code class="ruby">  c.filter_sensitive_data(&#39;&lt;twilio account sid&gt;&#39;) { ENV[&#39;TWILIO_ACCOUNT_SID&#39;]}</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="76">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="76">
+          <span class="hits">4</span>
           
           <code class="ruby">  c.filter_sensitive_data(&#39;&lt;twilio auth token&gt;&#39;) { ENV[&#39;TWILIO_ACCOUNT_TOKEN&#39;]}</code>
         </li>
