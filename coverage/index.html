@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-20T14:37:36-07:00">2015-07-20T14:37:36-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-20T15:40:11-07:00">2015-07-20T15:40:11-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
+    (<span class="covered_percent"><span class="green">95.73%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.28
+         1.26
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>20</b> files in total.
-    <b>113</b> relevant lines. 
-    <span class="green"><b>113</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
+    <b>23</b> files in total.
+    <b>164</b> relevant lines. 
+    <span class="green"><b>157</b> lines covered</span> and
+    <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,6 +51,26 @@
     <tbody>
       
       <tr>
+        <td class="strong"><a href="#2ee1b8ff3a6ca6b6c0d91fc3eb880a7e84a43ff3" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#aae1188fdc940da1df298d66d8038d218bb59849" class="src_link" title="app/controllers/messages_controller.rb">app/controllers/messages_controller.rb</a></td>
+        <td class="red strong">75.0 %</td>
+        <td>62</td>
+        <td>28</td>
+        <td>21</td>
+        <td>7</td>
+        <td>0.9</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#47254b00f3f0da8eeb43be88589a7e9895993e5f" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
@@ -63,11 +83,11 @@
       <tr>
         <td class="strong"><a href="#4a5c7feb2b064105eb1f6398d4b6a5616ccab81d" class="src_link" title="app/models/message.rb">app/models/message.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>26</td>
-        <td>12</td>
-        <td>12</td>
+        <td>30</td>
+        <td>15</td>
+        <td>15</td>
         <td>0</td>
-        <td>1.6</td>
+        <td>1.9</td>
       </tr>
       
       <tr>
@@ -221,11 +241,21 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#9e572e3c0aff865a691f7f1d9331fa6b31efe7cb" class="src_link" title="spec/features/messages/add_new_spec.rb">spec/features/messages/add_new_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>22</td>
+        <td>17</td>
+        <td>17</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#969c665c5ae89607e2bc36e0d8b5597bb3b69ed1" class="src_link" title="spec/models/message_spec.rb">spec/models/message_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>21</td>
-        <td>14</td>
-        <td>14</td>
+        <td>15</td>
+        <td>15</td>
         <td>0</td>
         <td>1.2</td>
       </tr>
@@ -247,7 +277,7 @@
         <td>25</td>
         <td>25</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>2.0</td>
       </tr>
       
     </tbody>
@@ -265,6 +295,444 @@
       </div>
     
       <div class="source_files">
+      
+        <div class="source_table" id="2ee1b8ff3a6ca6b6c0d91fc3eb880a7e84a43ff3">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  # Prevent CSRF attacks by raising an exception.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # For APIs, you may want to use :null_session instead.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  protect_from_forgery with: :exception</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="aae1188fdc940da1df298d66d8038d218bb59849">
+  <div class="header">
+    <h3>app/controllers/messages_controller.rb</h3>
+    <h4><span class="red">75.0 %</span> covered</h4>
+    <div>
+      <b>28</b> relevant lines. 
+      <span class="green"><b>21</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class MessagesController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action :set_message, only: [:show, :edit, :update, :destroy]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # GET /messages</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">    @messages = Message.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  # GET /messages/1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  # GET /messages/new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="15">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @message = Message.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  # GET /messages/1/edit</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  # POST /messages</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="24">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @message = Message.new(message_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="25">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    if @message.save</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      if @message.to_numbers.length == 1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        flash[:notice] = &#39;Message Sent!&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">        flash[:notice] = &#39;Messages Sent!&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      redirect_to @message</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      render :new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">  # PATCH/PUT /messages/1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="39">
+          
+          
+          <code class="ruby">    if @message.update(message_params)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="40">
+          
+          
+          <code class="ruby">      redirect_to @message, notice: &#39;Message was successfully updated.&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
+          
+          <code class="ruby">      render :edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">  # DELETE /messages/1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="48">
+          
+          
+          <code class="ruby">    @message.destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
+          
+          <code class="ruby">    redirect_to messages_url, notice: &#39;Message was successfully destroyed.&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def set_message</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @message = Message.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">    # Only allow a trusted parameter &quot;white list&quot; through.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def message_params</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="60">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      params.require(:message).permit(:from, :body, :status, to_numbers_attributes: [:number])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
       
         <div class="source_table" id="47254b00f3f0da8eeb43be88589a7e9895993e5f">
   <div class="header">
@@ -301,8 +769,8 @@
     <h3>app/models/message.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>12</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
+      <b>15</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -322,145 +790,169 @@
           <code class="ruby">  has_many :to_numbers</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  accepts_nested_attributes_for :to_numbers, allow_destroy: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  validates :from, presence: true</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
+          <code class="ruby">  validates :from, presence: true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
           <code class="ruby">  validates :body, presence: true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">  before_create :send_sms</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
           <code class="ruby">private</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">  def send_sms</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="11">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
           
-          <code class="ruby">    number = to_numbers.first.number</code>
+          <code class="ruby">    begin</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="12">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="13">
+          <span class="hits">4</span>
           
-          <code class="ruby">    response = RestClient::Request.new(</code>
+          <code class="ruby">      to_numbers.each do |number_object|</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="covered" data-hits="4" data-linenumber="14">
+          <span class="hits">4</span>
           
-          
-          <code class="ruby">      method: :post,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby">      url: &quot;https://api.twilio.com/2010-04-01/Accounts/#{ENV[&#39;TWILIO_ACCOUNT_SID&#39;]}/Messages.json&quot;,</code>
+          <code class="ruby">        response = RestClient::Request.new(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">      user: ENV[&#39;TWILIO_ACCOUNT_SID&#39;],</code>
+          <code class="ruby">          method: :post,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby">      password: ENV[&#39;TWILIO_ACCOUNT_TOKEN&#39;],</code>
+          <code class="ruby">          url: &quot;https://api.twilio.com/2010-04-01/Accounts/#{ENV[&#39;TWILIO_ACCOUNT_SID&#39;]}/Messages.json&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby">      payload: { Body: body,</code>
+          <code class="ruby">          user: ENV[&#39;TWILIO_ACCOUNT_SID&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">                 To:   number,</code>
+          <code class="ruby">          password: ENV[&#39;TWILIO_ACCOUNT_TOKEN&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby">                 From: from }</code>
+          <code class="ruby">          payload: { Body: body,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby">    ).execute</code>
+          <code class="ruby">                     To:   number_object.number,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">  rescue RestClient::BadRequest =&gt; error</code>
+          <code class="ruby">                     From: from }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="22">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="22">
           
-          <code class="ruby">    message = JSON.parse(error.response)[&#39;message&#39;]</code>
+          
+          <code class="ruby">        ).execute</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="23">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="23">
           
-          <code class="ruby">    errors.add(:base, message)</code>
+          
+          <code class="ruby">      end</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="24">
           <span class="hits">2</span>
           
-          <code class="ruby">    false</code>
+          <code class="ruby">    rescue RestClient::BadRequest =&gt; error</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="covered" data-hits="2" data-linenumber="25">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      message = JSON.parse(error.response)[&#39;message&#39;]</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="26">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      errors.add(:base, message)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="27">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">end</code>
@@ -2192,13 +2684,163 @@
   </pre>
 </div>
       
+        <div class="source_table" id="9e572e3c0aff865a691f7f1d9331fa6b31efe7cb">
+  <div class="header">
+    <h3>spec/features/messages/add_new_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>17</b> relevant lines. 
+      <span class="green"><b>17</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;The message path&quot;, vcr: true do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;will let the user add a new message&quot;, js: true do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit new_message_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &quot;message_from&quot;, with: attributes_for(:message)[:from]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &quot;Add New Number&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &quot;Number&quot;, with: attributes_for(:to_number)[:number]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &quot;message_body&quot;, with: attributes_for(:message)[:body]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &quot;Send Message&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&quot;Message Sent!&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;will fail, and give an error if the user does not fill out all fields&quot;, js: true do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit new_message_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &quot;Add New Number&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &quot;Number&quot;, with: attributes_for(:to_number)[:number]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &quot;message_body&quot;, with: attributes_for(:message)[:body]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &quot;Send Message&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&quot;can&#39;t be blank&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="969c665c5ae89607e2bc36e0d8b5597bb3b69ed1">
   <div class="header">
     <h3>spec/models/message_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
+      <b>15</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2314,8 +2956,8 @@
           <code class="ruby">      expect(message.errors.messages[:base]).to eq [&quot;The &#39;To&#39; number 1234567890 is not a valid phone number.&quot;]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
-          
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
           <code class="ruby">    end</code>
         </li>
@@ -2686,14 +3328,14 @@
           <code class="ruby">  config.around(:each) do |example|</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="48">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="9" data-linenumber="48">
+          <span class="hits">9</span>
           
           <code class="ruby">    DatabaseCleaner.cleaning do</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="49">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="9" data-linenumber="49">
+          <span class="hits">9</span>
           
           <code class="ruby">      example.run</code>
         </li>
@@ -2848,14 +3490,14 @@
           <code class="ruby">  c.configure_rspec_metadata!</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="75">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="75">
+          <span class="hits">6</span>
           
           <code class="ruby">  c.filter_sensitive_data(&#39;&lt;twilio account sid&gt;&#39;) { ENV[&#39;TWILIO_ACCOUNT_SID&#39;]}</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="76">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="76">
+          <span class="hits">6</span>
           
           <code class="ruby">  c.filter_sensitive_data(&#39;&lt;twilio auth token&gt;&#39;) { ENV[&#39;TWILIO_ACCOUNT_TOKEN&#39;]}</code>
         </li>

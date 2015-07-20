@@ -14,6 +14,7 @@ gem 'bootstrap_form'
 gem 'devise'
 gem 'paperclip'
 gem 'rest-client'
+gem "nested_form"
 
 group :production do
   gem 'rails_12factor'

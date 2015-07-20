@@ -2,8 +2,8 @@
 
 <p>
   <strong>To:</strong>
-  <% @message.to.each do |message_to|%>
-  <li><%= message_to %></li>
+  <% @message.to_numbers.each do |message_to|%>
+  <li><%= message_to.number %></li>
   <% end %>
 </p>
 
