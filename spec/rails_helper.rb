@@ -74,4 +74,5 @@ VCR.configure do |c|
   c.configure_rspec_metadata!
   c.filter_sensitive_data('<twilio account sid>') { ENV['TWILIO_ACCOUNT_SID']}
   c.filter_sensitive_data('<twilio auth token>') { ENV['TWILIO_ACCOUNT_TOKEN']}
+  c.allow_http_connections_when_no_cassette = true
 end

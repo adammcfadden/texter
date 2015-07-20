@@ -1,0 +1,4 @@
+var numFields = $("#to-fields").children().length + 1;
+var newField  = $("#to-fields").children().first().clone();
+newField.find('input').attr('id', 'to-recipient-' + numFields)
+$("#to-fields").append(newField);

@@ -1,19 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/texter/spec/features/messages/add_new_spec.rb": [
+      "/Users/Guest/Desktop/texter/spec/features/messages/add_additional_to_fields_spec.rb": [
         1,
         null,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
         1,
         1,
         1,
@@ -71,8 +63,8 @@
         null,
         null,
         1,
-        7,
-        7,
+        8,
+        8,
         null,
         null,
         null,
@@ -100,6 +92,7 @@
         1,
         4,
         4,
+        1,
         null
       ],
       "/Users/Guest/Desktop/texter/config/environment.rb": [
@@ -366,6 +359,28 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/texter/spec/features/messages/add_new_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/texter/spec/models/message_spec.rb": [
         1,
         null,
@@ -429,7 +444,7 @@
         null,
         null,
         1,
-        2,
+        5,
         null,
         null,
         null,
@@ -482,6 +497,6 @@
         null
       ]
     },
-    "timestamp": 1437414167
+    "timestamp": 1437416929
   }
 }

@@ -1,7 +1,9 @@
 <%= bootstrap_form_for(@message) do |f| %>
   <%= render "layouts/errors", object: @message %>
 
-  <%= f.text_field :to %>
+  <div id="to-fields">
+    <%= f.number_field :to, id: 'to-recipient-1'%>
+  </div>
   <%= f.text_field :from %>
   <%= f.text_field :body %>
   <%= f.text_field :status %>
