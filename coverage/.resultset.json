@@ -112,6 +112,10 @@
         1,
         null,
         1,
+        null,
+        1,
+        null,
+        1,
         1,
         1,
         1,
@@ -345,9 +349,13 @@
       ],
       "/Users/Guest/Desktop/texter/app/models/message.rb": [
         1,
+        1,
+        1,
+        1,
+        null,
         null
       ]
     },
-    "timestamp": 1437409529
+    "timestamp": 1437410148
   }
 }
