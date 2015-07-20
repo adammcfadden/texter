@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+# ruby '2.0.0'
 gem 'rails'
 gem 'pg'
 gem 'uglifier'
@@ -13,7 +13,10 @@ gem 'sass-rails', '>= 3.2'
 gem 'bootstrap_form'
 gem 'devise'
 gem 'paperclip'
-gem 'rails_12factor'
+
+group :production do
+  gem 'rails_12factor'
+end
 
 group :development do
   gem 'byebug'
@@ -34,4 +37,6 @@ group :test do
   gem 'capybara'
   gem 'simplecov', require: false
   gem 'poltergeist'
+  gem 'vcr'
+  gem 'webmock'
 end
