@@ -53,9 +53,9 @@ class MessagesController < ApplicationController
   def inbound_messages
     @inbound_message = Message.new(inbound_message_params)
     if @inbound_message.save
-      render plain: "Your message has been received! U+1F604"
+      render plain: "Your message has been received!"
     else
-      render plain: "Sorry, this number is not available at this time, please try again later. U+1F609"
+      render plain: "Sorry, this number is not available at this time, please try again later."
     end
   end
 

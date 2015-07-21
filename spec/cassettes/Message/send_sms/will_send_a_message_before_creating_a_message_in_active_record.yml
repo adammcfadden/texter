@@ -37,7 +37,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 21 Jul 2015 18:55:53 GMT
+      - Tue, 21 Jul 2015 19:13:00 GMT
       Strict-Transport-Security:
       - max-age=15768000
       X-Powered-By:
@@ -50,15 +50,15 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"sid": "SMefc9424d7e3c4bb682cc2be4375561e1", "date_created": "Tue,
-        21 Jul 2015 18:55:53 +0000", "date_updated": "Tue, 21 Jul 2015 18:55:53 +0000",
+      string: '{"sid": "SM56c5010d22c54b50a01d845600d792a7", "date_created": "Tue,
+        21 Jul 2015 19:13:00 +0000", "date_updated": "Tue, 21 Jul 2015 19:13:00 +0000",
         "date_sent": null, "account_sid": "<twilio account sid>", "to": "+15035129206",
         "from": "+16149168051", "body": "Factory Girl Tes(x)t Message", "status":
         "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api",
         "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code":
         null, "error_message": null, "uri": "/2010-04-01/Accounts/<twilio account
-        sid>/Messages/SMefc9424d7e3c4bb682cc2be4375561e1.json", "subresource_uris":
-        {"media": "/2010-04-01/Accounts/<twilio account sid>/Messages/SMefc9424d7e3c4bb682cc2be4375561e1/Media.json"}}'
+        sid>/Messages/SM56c5010d22c54b50a01d845600d792a7.json", "subresource_uris":
+        {"media": "/2010-04-01/Accounts/<twilio account sid>/Messages/SM56c5010d22c54b50a01d845600d792a7/Media.json"}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 18:55:53 GMT
+  recorded_at: Tue, 21 Jul 2015 19:13:00 GMT
 recorded_with: VCR 2.9.3
