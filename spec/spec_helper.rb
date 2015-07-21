@@ -23,18 +23,21 @@ SimpleCov.start
 require 'capybara/poltergeist'
 Capybara.javascript_driver = :poltergeist
 
+#Define testing server
+Capybara.app_host = "http://localhost:3001"
+Capybara.server_host = "localhost"
+Capybara.server_port = 3001
+
 RSpec.configure do |config|
+
+#turn on selenium driver before each selenium test. *Firefox is the default Browser and needs to be install for this to work. You can set to a different browser if desired.
   if :selenium_test
     config.before :each do
       Capybara.current_driver = :selenium
       Capybara.run_server = true
-      Capybara.app_host = "http://localhost:3001"
-      Capybara.server_host = "localhost"
-      Capybara.server_port = 3001
     end
-
+#turn off selenium driver after selenium test.
     config.after :each do
-      Capybara.reset_sessions!
       Capybara.use_default_driver
       Capybara.run_server = false
     end
