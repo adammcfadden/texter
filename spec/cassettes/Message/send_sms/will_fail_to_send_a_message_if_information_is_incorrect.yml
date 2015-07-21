@@ -37,7 +37,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 Jul 2015 22:39:25 GMT
+      - Tue, 21 Jul 2015 18:55:53 GMT
       X-Powered-By:
       - AT-5000
       X-Shenanigans:
@@ -52,7 +52,7 @@ http_interactions:
         phone number.", "more_info": "https://www.twilio.com/docs/errors/21211", "status":
         400}'
     http_version: 
-  recorded_at: Mon, 20 Jul 2015 22:39:25 GMT
+  recorded_at: Tue, 21 Jul 2015 18:55:53 GMT
 - request:
     method: post
     uri: https://<twilio account sid>:<twilio auth token>@api.twilio.com/2010-04-01/Accounts/<twilio
@@ -90,7 +90,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 Jul 2015 22:39:29 GMT
+      - Tue, 21 Jul 2015 18:55:53 GMT
       X-Powered-By:
       - AT-5000
       X-Shenanigans:
@@ -105,5 +105,5 @@ http_interactions:
         phone number.", "more_info": "https://www.twilio.com/docs/errors/21211", "status":
         400}'
     http_version: 
-  recorded_at: Mon, 20 Jul 2015 22:39:30 GMT
+  recorded_at: Tue, 21 Jul 2015 18:55:53 GMT
 recorded_with: VCR 2.9.3
