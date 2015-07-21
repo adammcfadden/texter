@@ -22,8 +22,26 @@ SimpleCov.start
 
 require 'capybara/poltergeist'
 Capybara.javascript_driver = :poltergeist
+# Capybara.run_server = true
+# # Capybara.server_port = 31337
+# # Capybara.app_host = "http://0.0.0.0:31337"
 
 RSpec.configure do |config|
+  if :selenium_test
+    config.before :each do
+      Capybara.current_driver = :selenium
+      Capybara.run_server = true
+      Capybara.app_host = "http://localhost:3001"
+      Capybara.server_host = "localhost"
+      Capybara.server_port = 3001
+    end
+
+    config.after :each do
+      Capybara.reset_sessions!
+      Capybara.use_default_driver
+      # Capybara.app_host = nil
+    end
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

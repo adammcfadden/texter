@@ -51,8 +51,12 @@ class MessagesController < ApplicationController
   end
 
   def inbound_messages
-    Message.send_reply(params[:From])
-    render plain: "This is an automated reply endpoint"
+    @inbound_message = Message.new(inbound_message_params)
+    if @inbound_message.save
+      render plain: "Your message has been received! U+1F604"
+    else
+      render plain: "Sorry, this number is not available at this time, please try again later. U+1F609"
+    end
   end
 
   private
@@ -64,5 +68,9 @@ class MessagesController < ApplicationController
     # Only allow a trusted parameter "white list" through.
     def message_params
       params.require(:message).permit(:from, :body, :status, to_numbers_attributes: [:number])
+    end
+
+    def inbound_message_params
+      {to_numbers_attributes: [number: params[:To]], from: params[:From], body: params[:Body], inbound: true}
     end
 end

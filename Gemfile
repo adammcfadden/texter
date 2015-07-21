@@ -43,4 +43,5 @@ group :test do
   gem 'poltergeist'
   gem 'vcr'
   gem 'webmock'
+  gem 'selenium-webdriver'
 end
