@@ -3,6 +3,8 @@
 <a href="APP LINK IF APPLICABLE" target="#"><APP LINK NAME></a>
 
 By Ian MacDonald (<a href="https://github.com/matchbookmac" target="#">GitHub</a>)
+And Adam McFadden (<a href="https://github.com/adammcfadden" target="#">GitHub</a>)
+
 
 @ Epicodus Programming School, Portland, OR
 
@@ -16,7 +18,7 @@ GNU General Public License, version 3 (see below). Copyright (c) 2015 Ian C. Mac
 
 ### Author(s)
 
-Ian MacDonald
+Ian MacDonald, Adam McFadden
 
 ### Setup
 
@@ -45,35 +47,8 @@ Start App:
 > rails s
 ```
 
-### Database Schema
-
-List of relations
-
-   Name     | Type  
- ---------- | -------
- <relation_0>    | table
- <relation_1>   | table
-
-<relation_0> table
-
-id  | first_name | last_name | stylist_id
-----|------------|-----------|------------
-int | varchar    | varchar   | int
-
-<relation_1> table
-
-id  | first_name | last_name
-----|------------|-----------
-int | varchar    | varchar
-
-bands_venues join table
-
-<relation_0>_id | <relation_1>_id
---------|---------
-int     | int
-
 ### License ###
-Copyright  (C)  2015  Ian C. MacDonald
+Copyright  (C)  2015  Ian C. MacDonald - Adam McFadden
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
