@@ -1,9 +1,10 @@
-## APP NAME
+## Texter
 
 <a href="APP LINK IF APPLICABLE" target="#"><APP LINK NAME></a>
 
-By Ian MacDonald (<a href="https://github.com/matchbookmac" target="#">GitHub</a>)
-And Adam McFadden (<a href="https://github.com/adammcfadden" target="#">GitHub</a>)
+By Ian MacDonald <a href="https://github.com/matchbookmac" target="#">GitHub</a>
+
+And Adam McFadden <a href="https://github.com/adammcfadden" target="#">GitHub</a>
 
 
 @ Epicodus Programming School, Portland, OR
@@ -12,9 +13,9 @@ GNU General Public License, version 3 (see below). Copyright (c) 2015 Ian C. Mac
 
 ### Description
 
-**APP NAME**
+Texter uses the twilio API to send and recieve text messages to users. You will need to include your API keys as ENV variables (TWILIO_ACCOUNT_SID, TWILIO_ACCOUNT_TOKEN) for the app to function.
 
-<DESCRIPTION>
+To build a similar app follow inctructions found on <a href="https://www.learnhowtoprogram.com/lessons/apis-and-twilio-weekend-homework" target="#">LearnHowToProgram</a>
 
 ### Author(s)
 
